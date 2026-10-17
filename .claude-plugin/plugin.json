@@ -1,5 +1,6 @@
 {
   "name": "sola-ui",
+  "displayName": "Sola UI",
   "version": "1.6.1",
   "description": "Design with Sola AIR: write .sola components using the real @sola-air-ui/ui props, and render a self-contained HTML preview.",
   "author": {
@@ -8,6 +9,9 @@
   },
   "homepage": "https://sola-air.dev",
   "repository": "https://github.com/Rbm3267/sola-ui-skill",
+  "documentationUrl": "https://sola-air.dev/docs",
+  "privacyPolicyUrl": "https://sola-air.dev/privacy#sola-ui-skill",
+  "supportUrl": "https://github.com/Rbm3267/sola-air/issues",
   "license": "MIT",
   "keywords": [
     "sola",
