@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "sola-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sola-air-ui/mcp@1.0.5"
+      ]
+    }
+  }
+}

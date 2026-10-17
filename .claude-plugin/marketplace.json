@@ -1,0 +1,15 @@
+{
+  "name": "sola-air",
+  "description": "Sola AIR plugins for Claude Code.",
+  "owner": {
+    "name": "Sola AIR",
+    "url": "https://sola-air.dev"
+  },
+  "plugins": [
+    {
+      "name": "sola-ui",
+      "source": "./",
+      "description": "Design with Sola AIR: write .sola components using the real @sola-air-ui/ui props, and render a self-contained HTML preview."
+    }
+  ]
+}
