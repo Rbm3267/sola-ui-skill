@@ -1,6 +1,6 @@
 # Sola AIR UI skill
 
-A skill for Claude and an extension for Gemini CLI that design with [Sola AIR](https://sola-air.dev): they write `.sola` components using only the components and props @sola-air-ui/ui 1.6.3 really ships, check them, and render a self-contained HTML preview (`skills/sola-ui/scripts/preview.mjs`, Node 18+, no install, no network).
+A skill for Claude and an extension for Gemini CLI that design with [Sola AIR](https://sola-air.dev): they write `.sola` components using only the components and props @sola-air-ui/ui 1.7.0 really ships, check them, and render a self-contained HTML preview (`skills/sola-ui/scripts/preview.mjs`, Node 18+, no install, no network).
 
 This repo is generated from [Rbm3267/sola-air](https://github.com/Rbm3267/sola-air) by `scripts/build-skill.mjs` on each release. Open issues and pull requests there.
 
