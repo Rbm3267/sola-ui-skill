@@ -1,11 +1,11 @@
-// @sola-air-ui/compiler 1.5.2, bundled for scripts/preview.mjs (acorn and htmlparser2 are the files next to it). Generated; do not edit.
+// @sola-air-ui/compiler 1.5.3, bundled for scripts/preview.mjs (acorn and htmlparser2 are the files next to it). Generated; do not edit.
 
 // packages/compiler/src/index.js
 import * as acorn from "./acorn.mjs";
 import * as htmlparser2 from "./htmlparser2.mjs";
 import { readFileSync } from "node:fs";
 var { version: COMPILER_VERSION } = JSON.parse(
-  "{\"version\":\"1.5.2\"}"
+  "{\"version\":\"1.5.3\"}"
 );
 var CORE_PROVIDED = /* @__PURE__ */ new Set([
   "createSignal",
@@ -1352,6 +1352,20 @@ function compile(source, options = {}) {
 `;
         domCode += `      let _entry = ${eid}_keyMap.get(_key);
 `;
+        domCode += `      if (_entry && (_entry.item !== ${node.attribs.item}${node.attribs.index ? ` || _entry.index !== _i` : ""})) {
+`;
+        domCode += `        __flush_destroys(_entry.ctx);
+`;
+        domCode += `        const _old = _entry.nodes;
+`;
+        domCode += `        if (_old.includes(_cursor)) _cursor = _old[_old.length - 1].nextSibling;
+`;
+        domCode += `        _old.forEach(n => n.remove());
+`;
+        domCode += `        _entry = null;
+`;
+        domCode += `      }
+`;
         domCode += `      if (!_entry) {
 `;
         domCode += `        const _kctx = pushContext();
@@ -1361,7 +1375,7 @@ function compile(source, options = {}) {
         domCode += `        const f = document.createDocumentFragment();
 `;
         node.children.forEach((child) => emitNode(child, "f", eachLocals, inSvg));
-        domCode += `        _entry = { nodes: Array.from(f.childNodes), ctx: _kctx };
+        domCode += `        _entry = { nodes: Array.from(f.childNodes), ctx: _kctx, item: ${node.attribs.item}${node.attribs.index ? ", index: _i" : ""} };
 `;
         domCode += `        } finally { popContext(_kctx); }
 `;
