@@ -1,7 +1,7 @@
 {
   "name": "sola-ui",
   "displayName": "Sola UI",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Design with Sola AIR: write .sola components using the real @sola-air-ui/ui props, and render a self-contained HTML preview.",
   "author": {
     "name": "Sola AIR",
