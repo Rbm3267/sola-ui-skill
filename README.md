@@ -1,6 +1,6 @@
 # Sola AIR UI skill
 
-A skill for Claude that designs with [Sola AIR](https://sola-air.dev): it writes `.sola` components using only the components and props @sola-air-ui/ui 1.9.0 really ships, checks them, and renders a self-contained HTML preview.
+A skill for Claude that designs with [Sola AIR](https://sola-air.dev): it writes `.sola` components using only the components and props @sola-air-ui/ui 1.9.1 really ships, checks them, and renders a self-contained HTML preview.
 
 This repo is generated from [Rbm3267/sola-air](https://github.com/Rbm3267/sola-air) by `scripts/build-skill.mjs` on each release. Open issues and pull requests there.
 
