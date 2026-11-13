@@ -1,3 +1,8 @@
+# Example: companion-shell
+
+Save this as `companion-shell.sola`, then run `npx -y @sola-air-ui/preview@1.0.0 companion-shell.sola`. It passes the preview check in sola-air's CI.
+
+```html
 <script>
   // A companion shell for an existing app: a dock, a Ctrl+K palette, a side
   // drawer and toasts sent over the event bus. Mount it with mountShell() to
@@ -40,3 +45,4 @@
 <style>
   .note { color: var(--sola-text-secondary, #475569); }
 </style>
+```

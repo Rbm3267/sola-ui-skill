@@ -5,7 +5,7 @@ description: Design and build user interfaces with Sola AIR (.sola single-file c
 
 # Designing with Sola AIR
 
-Sola AIR is a compiler-first UI framework. A `.sola` file holds a component's script, markup and scoped styles; the compiler turns it into plain DOM code driven by signals. `@sola-air-ui/ui` 1.9.1 ships 37 components. This skill vendors core 1.5.2, compiler 1.5.4 and those components, so you can check a design and render it to HTML with no install.
+Sola AIR is a compiler-first UI framework. A `.sola` file holds a component's script, markup and scoped styles; the compiler turns it into plain DOM code driven by signals. `@sola-air-ui/ui` 1.9.2 ships 37 components. The skill checks and previews a design with the `@sola-air-ui/preview` npm package (1.0.0), which brings core, the compiler, the design tokens and those components. npx downloads it from the npm registry the first time.
 
 `<skill-dir>` below means the folder this file is in.
 
@@ -16,7 +16,7 @@ Sola AIR is a compiler-first UI framework. A `.sola` file holds a component's sc
 3. **Preview it.** Run:
 
    ```bash
-   node <skill-dir>/scripts/preview.mjs design.sola
+   npx -y @sola-air-ui/preview@1.0.0 design.sola
    ```
 
    It prints errors as `file:line:col  CODE  message` and exits 1, or writes `design.preview.html`: one self-contained file with the runtime, design tokens and every component inlined. Fix every error and run it again. Add `--theme dark` for the dark theme, `--preset sola|zinc|compact|graphite` for one of the built-in token presets, `--props '{"title":"Q3"}'` to pass props, or `--check` to check without writing a file.
@@ -88,4 +88,4 @@ Sola AIR is a compiler-first UI framework. A `.sola` file holds a component's sc
 - Shell: LauncherDock, CommandPalette, CompanionDrawer, ToastHost
 - AI and intent: IntentCard, IntentList, AmbientSuggestion, ConversationThread, ActionStrip, ConfidenceBadge, IntentSheet
 
-Props and defaults for each are in `reference/components.md`. The full language spec is `reference/AGENTS.md`. Working examples are in `examples/`.
+Props and defaults for each are in `reference/components.md`. The full language spec is `reference/AGENTS.md`. Working examples are in `examples/`, one design per Markdown file.

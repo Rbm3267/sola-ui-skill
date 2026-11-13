@@ -1,3 +1,8 @@
+# Example: signup-form
+
+Save this as `signup-form.sola`, then run `npx -y @sola-air-ui/preview@1.0.0 signup-form.sola`. It passes the preview check in sola-air's CI.
+
+```html
 <script>
   // A sign-up form with validation and a confirmation message.
   import Card from '@sola-air-ui/ui/card';
@@ -45,3 +50,4 @@
   .form { display: grid; gap: var(--sola-space-md, 12px); max-width: 420px; }
   .hint, .summary { margin: 0; font-size: var(--sola-font-size-sm, 12px); color: var(--sola-text-secondary, #475569); }
 </style>
+```

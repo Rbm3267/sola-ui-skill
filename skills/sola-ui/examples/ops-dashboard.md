@@ -1,3 +1,8 @@
+# Example: ops-dashboard
+
+Save this as `ops-dashboard.sola`, then run `npx -y @sola-air-ui/preview@1.0.0 ops-dashboard.sola`. It passes the preview check in sola-air's CI.
+
+```html
 <script>
   // An operations dashboard: KPI cards, a clickable incident table and a detail panel.
   import StatGrid from '@sola-air-ui/ui/stat-grid';
@@ -59,3 +64,4 @@
   .detail h2 { margin: 0 0 4px; font-size: var(--sola-font-size-lg, 16px); }
   .age { color: var(--sola-text-secondary, #475569); font-size: var(--sola-font-size-sm, 12px); }
 </style>
+```
